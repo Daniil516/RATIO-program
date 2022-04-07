@@ -1,0 +1,63 @@
+.introduction_page_container {
+    display: flex;
+    flex-direction: column;
+    grid-area: left_menu;
+}
+.introduction_page_container h1 {
+    font-size: calc(20px + 72 * (100vw / 1920));
+    line-height: calc(36px + 60 * (100vw / 1920));
+    width: 74%;
+    margin-bottom: 9%; 
+}
+.introduction_page_container p {
+    width: 45%;
+    margin-bottom: 10%;
+    min-width: 250px;
+    font-family: 'Ubuntu Medium';
+    font-size: calc(10px + 9.5 * (100vw / 1920));
+}
+.general_learnmore_button
+{
+    display: flex;
+    background-color:#9C69E2;
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.general_learnmore_button a {
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-size: 18px;
+    color:#FFFFFF;
+    white-space: nowrap;
+}
+.introduction_img {
+    max-width: 180%;
+    margin-left: -85%;
+    margin-bottom: -18%;
+    grid-area: image;
+    align-self: end;
+}
+.introduction_grid_container {
+    display: grid;
+    grid-template-areas: "left_menu image";
+    margin-bottom: 18%;
+}
+@media (max-width: 700px) {
+    .introduction_img { max-width: 230%; }
+}
+@media (max-width: 500px) and (orientation: portrait)
+{
+    .introduction_img { width: 0%; }
+    .introduction_grid_container { display: flex; }
+    .introduction_page_container {
+        width: 100%;
+        align-items: center;
+    }
+    .introduction_page_container p { width: 100% }
+    .introduction_page_container h1 { width: 100% }
+} 

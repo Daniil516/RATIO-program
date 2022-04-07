@@ -1,0 +1,18 @@
+.favicon {
+    display: flex;
+    column-gap: 9px;
+    align-items: end;
+}
+.circle_element {
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color:#9C69E2;
+}
+.oval_element {
+    width: 20px;
+    height: 35px;
+    border-radius: 20px;
+    background-color:#F063B8;
+}

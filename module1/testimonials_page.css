@@ -1,0 +1,101 @@
+.testimonials_container {
+    background-color: rgba(156, 105, 226, 1);
+    width: 90%;
+    padding-bottom: 7%;
+    border-radius: 50px;
+    margin-bottom: 12%;
+}
+.testimonials_card, .testimonials_header, .testimonials_left_slider { margin-left: 8.3%; }
+.testimonials_header {
+    font-family: 'Ubuntu-Bold';
+    font-size: 40px;
+    line-height: 52px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 10%;
+}
+.testimonials_card {
+    display: flex;
+    background-color:rgba(255, 255, 255, 1);
+    margin-top: 8%;
+    border-radius: 20px;
+    margin-right: 34%;
+    box-shadow: inset 0px -20px 0 0px rgba(138, 85, 214);
+    margin-bottom: 3.5%;
+    flex-wrap: wrap;
+}
+.testimonials_card .photo {
+    max-width: 90px;
+    max-height: 90px;
+    margin-left: 10%;
+    margin-top: 8.57%;
+}
+.author_information {
+    margin-top: 11.42%;
+    margin-left: 4.2%;
+}
+.testimonial_author_name {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0;
+}
+.testimonial_author_post {
+    font-family: 'Ubuntu-Medium';
+    font-size: 14px;
+    color:rgba(156, 105, 226, 1);
+    line-height: 22px;
+    margin: 0;
+}
+.testimonial_text {
+    font-family: 'Ubuntu Regular';
+    font-size: 18px;
+    color: #4B5D68;
+    line-height: calc(16px + 18 * (100vw / 1920));
+    width: 60.2%;
+    margin-left: 28.5%;
+    margin-bottom: 10%;
+    margin-right: 70px;
+}
+.testimonials_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 7%;
+}
+.testimonials_left_slider {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 60px;
+}
+.testimonials_left_slider .point {
+    background-color: #FFFFFF;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.testimonials_left_slider .current_point {
+    background-color:#F063B8;
+    width: 10px;
+    height: 10px;
+}
+.testimonials_right_slider {
+    display: flex;
+    column-gap: 20px;
+    text-align: right;
+}
+@media (max-width: 500px) and (orientation: portrait) {
+    .testimonials_container { width: 100%; }
+}
+@media (max-width: 770px) {
+    .testimonials_header {
+        line-height: 20px;
+    }
+    .testimonial_text {
+        font-size: calc(6px + 12 * (100vw / 770));
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,37 @@
+.who_are_we_container {
+    width: 91%;
+    background-color: #F063B826;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 13%;
+}
+.text_container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-left: 5.8%;
+    margin-right: 8.3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.text_container h3 {
+    font-size: calc(20px + 24 * (100vw / 1920));
+    width: 114%;
+}
+.text_container p {
+    width: 98.5%;
+    font-size: calc(10px + 10 * (100vw / 1920)); 
+}
+.who_are_we_image {
+    max-width: 50%;
+    height: 140%;
+}
+@media (max-width: 1350px), (max-device-width: 1350px) {
+    .who_are_we_container { flex-wrap: wrap; }
+    .who_are_we_image { min-width: 300px; }
+    .who_are_we_container { justify-content: center; }
+}
+@media (max-width: 500px) and (orientation: portrait) {
+    .who_are_we_image { min-width: 100%; }
+    .who_are_we_container { width: 100%; }
+}  

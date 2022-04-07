@@ -1,0 +1,49 @@
+html { overflow-x: hidden; }
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+.container {
+    width: 78%;
+    margin-left: 15.5%;
+    margin-top: 5%;
+}
+.header_and_nav {
+    display: flex;
+    column-gap: 9.69%;
+    margin-bottom: 5.5%;  
+}
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 26%;
+    line-height: 25.6px;
+    font-family: 'Ubuntu Medium';
+}
+@media (max-width: 700px) and (orientation: portrait)
+{
+    .container {
+        width: 100%;
+        margin-left: 0%;
+    }
+    article {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .header_and_nav { padding-left: 10%; }
+}
+@media (max-width: 500px) and (orientation: portrait)
+{
+    .container {
+        margin-left: 0;
+        margin-top: 5%; 
+    }
+    article {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .header_and_nav { 
+        padding-left: 5%;
+        column-gap: 3%;
+    } 
+} 

@@ -1,0 +1,86 @@
+.features_page_container {
+    width: 90%;
+    margin-bottom: 19%;
+}
+.features_page_introduction {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 18%;
+}
+.features_page_container h3 {
+    font-size: calc(20px + 20 * (100vw / 1920));
+    padding-bottom: 4%;    
+}
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 118px;
+    column-gap: 10px;
+}
+.card {
+    position: relative;
+    max-width: 520px;
+}
+.background {
+    width: 100%;
+    position: absolute;
+}
+.feature_text {
+    width: 35%;
+    padding-top: 4.5%;
+    align-self: center;
+    margin-left: 48%;
+}
+.feature_text h4 {
+    font-size: 24px;
+    font-family: 'Ubuntu Regular';
+    white-space: nowrap;
+}
+.feature_text p {
+    font-size: 16px;
+    line-height: 25.6px;
+    min-width: 225px;
+    margin-bottom: 14%;
+    height: 160px;
+}
+.feature_text a {
+    font-size: 16px;
+    font-weight: 800;
+    position: relative;
+}
+.arrow {
+    position: relative;
+    top: 4px;
+    left: 14px;
+}
+.feature_learnmore_button {
+    display: flex;
+    flex-wrap: nowrap;    
+}
+@media (min-width: 2251px) {
+    .cards { justify-content: center; }
+}
+@media (max-width: 1520px) {
+    .cards { justify-content: center; }
+}
+@media (max-width: 770px) {
+    .feature_text h4 {
+        font-size: calc(10px + 14 * (100vw / 770));
+        margin-bottom: 0;
+    }
+    .feature_text p {
+        font-size: calc(6px + 10 * (100vw / 770));
+        line-height: calc(6px + 19 * (100vw / 770));
+        height: auto;
+        min-width: 140px;
+        margin-bottom: 7%;
+    }
+    .feature_text a { font-size: calc(6px + 10 * (100vw / 770)); }
+}
+@media (max-width: 500px) and (orientation: portrait) {
+    .features_page_container { width: 100%; }
+}

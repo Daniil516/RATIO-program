@@ -1,0 +1,26 @@
+.card {  
+    position: relative;
+    margin-left: 20%;
+    max-width: 550px;
+}
+.image {
+    width: 100%;
+    position: absolute;
+}
+.feature_text {
+    width: 35%;
+    padding-top: 3.5%;
+    max-width: 222px;
+    align-self: center;
+    margin-left: 48%;  
+}
+.feature_text h4 { font-size: 24px; }
+.feature_text p {
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.feature_text a {
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 18px;
+}
